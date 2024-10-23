@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+<style>
+body{
+ height: 100%;
+ background-image:url(./first.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ padding-top: 10%;
+}
+#submit{
+     border:2px solid black;
+     border-radius: 5px;
+     padding: 10px 30px;
+     margin-bottom: 5%;
+     transition-duration: 1s;
+     font-weight: bold;
+}
+#submit:hover{
+     background-color: black;
+     color: aliceblue;
+}
+#un, #pw{
+    height: 40px;
+    width: 200px;
+     border:2px solid black;
+     border-radius: 5px;
+     font-weight: bolder;
+}
+input::placeholder {
+    font-weight: bolder;
+    opacity: 0.5;
+    color: rgb(51, 46, 46);
+}
+h1{
+    color: black;
+    padding-top: 8%;
+}
+#forms{
+    width: 450px;
+    border-radius: 25px;
+    background-color: rgba(10, 10, 10, 0.222);
+    backdrop-filter: blur(3px);
+    font-weight: bolder;
+}
+input::placeholder {
+    font-weight: bolder;
+    opacity: 0.5;
+    color: rgb(51, 46, 46);
+}
+
+</style>
+</head>
+<body>
+<center>
+<form id="forms">
+<h1>Log In Page</h1>
+<br>
+<input type="text"id="un" required placeholder="User Name">
+
+<br><br>
+
+<input type="password"id="pw" required placeholder="Password">
+
+<br><br>
+
+<input type="submit" id="submit">
+
+<p>Not a member <a href="./register.html">Register</a> ?</p>
+<p>Login as a <a href="./tour.html">Guest</a> ?</p><br>
+
+<p id="credentials" style="padding-bottom: 50px;"></p>
+</form>
+</center>
+
+<script>
+     document.getElementById("forms").addEventListener("submit" ,  function(event) {
+          event.preventDefault();
+
+          let logusername = document.getElementById("un").value;
+          let logpassword = document.getElementById("pw").value;
+
+          let users = JSON.parse(localStorage.getItem("users")) || [] ;
+
+          let found = users.find(user => user.username === logusername && user.password === logpassword);
+
+          if(found){
+               
+                     window.location.href = "./tour.html";
+               }
+          else{
+               let validate = document.getElementById("credentials")
+               validate.textContent="Invalid Credentials";
+          }
+
+          
+     });
+</script>
+
+</body>
+</html>

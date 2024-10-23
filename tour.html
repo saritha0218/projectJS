@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+/* navbar styling */
+        nav{
+            height: 80px;
+            width: 100%;
+            padding: 10px 0px;
+            background-color: rgb(14, 14, 75);
+            top: 0;
+            position: fixed;
+            display: flex;
+            z-index: 100;
+        }
+        nav img{
+            width: 70px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #navv a{
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            padding: 23px;
+        }
+        nav div {
+            padding-top: 20px;
+        }
+
+
+/* section1 */
+        #section1{
+            background-image: url(./fourth.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+            height: 400px;
+            padding-top: 200px;
+        }
+        #sec1{
+            width: 450px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.475);
+            backdrop-filter: blur(3px);
+            font-weight: bolder;
+            padding: 30px;
+        }
+        #sec1 button{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #sec1 a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+
+/* section2 */
+        #section2{
+            background-color: rgb(22, 22, 88);
+            color: whitesmoke;
+            height: 500px;
+        }
+        #section2 h1{
+            font-size: 40px;
+            padding: 0.7%;
+            padding-top: 3.5%;
+        }
+        #sec2{
+            display: flex;
+            align-items: center;
+        }
+        #sec2 div{
+            width: 280px;
+            height: 220px;
+            margin-left: 2%;
+            padding: 2%;
+            margin-top: 2%;
+            border: 2px solid black;
+            border-radius: 8px;
+            box-shadow: 5px 5px 8px black;
+        }
+        #sec2 div:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        #sec2 div ion-icon {
+            font-size: 35px;
+        }
+        #sec2 div h2{
+            font-size: 35px;
+        }
+        #sec2 div p{
+            font-size: 20px;
+        }
+
+/* section3 */
+       #section3{
+        background-color: rgb(22, 22, 88);
+        display: flex;
+        color: white;
+        width: 100%;
+        padding-bottom: 5%;
+       }
+       #section3 img{
+        width: 50%;
+        mix-blend-mode: multiply;
+       }
+       #sec3{
+        width: 400px;
+        height: 150px;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.475);
+        backdrop-filter: blur(3px);
+        font-weight: bolder;
+        padding: 50px;
+        margin-top: 75px;
+        margin-left: 150px;
+        padding-bottom: 70px;
+       }
+       #sec3 button{
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+       }
+
+/* section4 */
+        #section4{
+            background-color: rgb(22, 22, 88);
+            color: white;
+            padding-bottom: 100px;
+        }
+        #section4 h1{
+            font-size: 35px;
+            display: inline-block;
+            margin: 50px;
+        }
+        #section4 h1 ion-icon{
+            font-size: 40px;
+            vertical-align: middle;
+        }
+        #sec4{
+            display: flex;
+        }
+        #sec4 img{
+            width: 270px;
+            height: 270px;
+            margin-left: 28px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 8px black;
+        }
+        #sec4 img:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+
+/* section5 */
+        #section5{
+            background-color: rgb(22, 22, 88);
+            color: white;
+        }
+        #section5 h1{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        #section5 h4{
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        #section5 p{
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        #sec5{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #section5 button{
+            padding: 10px;
+            margin-left: 12px;
+        }
+        #div1 {
+            transition: transform 0.3s ease;
+        }
+
+        #div1:hover {
+            transform: translateY(-100px);
+        }
+        
+
+/* section6 */
+        #section6{
+            width: 100%;
+            display: flex;
+        }
+        #section6 img{
+            margin-top: 20px;
+            width: 1000px;
+            height: 820px;
+            background-blend-mode: multiply;
+        }
+        #sec6{
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 90px;
+            margin-top: 20px;
+        }
+        #sec6 input{
+            width: 350px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #sec6 textarea{
+            height: 100px;
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+
+/* section7 */
+        #section7{
+            background-color: rgb(22, 22, 88);
+            color: white;
+            padding-bottom: 100px;
+        }
+        #s7h1{
+            font-size: 35px;
+            padding: 50px;
+        }
+        #sec7{
+            display: flex;
+            margin-left: 150px;
+        }
+        #sec7 div{
+            width: 300px;
+            margin-left: 50px;
+            border: 3px solid white;
+            border-radius: 20px;
+            padding: 20px;  
+            background-color: black;      
+
+        }
+        #sec7 div img{
+            width: 85px;
+            height: 90px;
+            border-radius: 50%;
+        }
+/* section8 */
+        #section8{
+            background-color: rgb(22, 22, 88);
+            padding-left: 25%;
+            color: white;
+            padding-bottom: 100px;
+        }
+        #sec8{
+            display: flex;
+            gap: 50px;
+        }
+        #sec8 div{
+            font-weight: bold;
+            font-size: 22px;
+        }
+        #sec8 input{
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            font-weight: bold;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        #sec8 #msg{
+            width: 300px;
+            border-radius: 10px;
+            height: 200px;
+            font-weight: bold;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        #sec8 #sub{
+            width: 150px;
+        }
+
+
+/* footer */
+        #footer{
+            display: flex;
+            gap: 100px;
+            background-color: rgb(22, 22, 88);
+            color: white;
+            padding-left: 10%;
+            border-top: 3px solid white;
+            padding-top: 5%;
+            font-weight: bold;
+        }
+        #footer div{
+            height: 300px;
+
+        }
+        #foot1{
+            width: 550px;
+        }
+        #foot1 p{
+            font-size: 18px;
+        }
+        #foot1 ion-icon{
+            font-size: 30px;
+            padding-right: 15px;
+        }
+        #foot2 a, #foot3 a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./fly.png">
+        <div id="navv">
+        <a href="#section1">Home</a>
+        <a href="#section2">Services</a>
+        <a href="#section3">About</a>
+        <a href="#section5">Packages</a>
+        <a href="#">Country Info</a>
+        <a href="#section6">Book</a>
+        <a href="#section7">Reviews</a>
+        <a href="#section8">Contact</a>
+        <a href="./index.html">Login</a>
+        </div>
+    </nav>
+
+    <section id="section1">
+        <center>
+        <div id="sec1">
+            <h2>Travel The World & Explore The New Destination</h2><br>
+            <p>Welcome to our travel info. Explore new destinations and plan your next advanture with us!</p><br>
+            <button><a href="#section5">Packages</a></button>
+        </div>
+        </center>
+    </section>
+
+    <section id="section2">
+        <center><h1>Services</h1></center>
+        <div id="sec2">
+        <div>
+            <ion-icon name="earth"></ion-icon><br><br>
+            <h2>Around The World</h2><br>
+            <p>Discovers our global travel packages and explores the world's most fascinating destinations.</p><br>
+        </div>
+        <div>
+            <ion-icon name="airplane"></ion-icon><br><br>
+            <h2>Fastest Travel</h2><br>
+            <p>Experience the fastest and most convienient travel options with our exclusive travel services. </p><br>
+        </div>
+        <div>
+            <ion-icon name="home"></ion-icon><br><br>
+            <h2>Affordable Staying</h2><br>
+            <p>Find the best deals on comfortable and affordable accomodations for your trip.</p><br>
+        </div>
+        <div>
+            <ion-icon name="heart"></ion-icon><br><br>
+            <h2>Safty Guide</h2><br>
+            <p>Stay safe during your travels with our comprehensive safety trips and guidelines.</p><br>
+        </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <img src="./third.jpg">
+        <div id="sec3">
+            <center><h1>About Us</h1></center><br><br>
+            <p>Learn about our travel information services and how we can help you plan you dream vacation.</p><br><br>
+            <center><button>Read More</button></center>
+        </div>
+    </section>
+
+    <section id="section4">
+        <center><h1>Our Gallary<ion-icon name="arrow-down-outline"></ion-icon></h1></center>
+        <div id="sec4">
+            <img src="./g1.webp">
+            <img src="./g2.jpg">
+            <img src="./g3.jpg">
+            <img src="./g4.jpg">
+            <img src="./g5.jpg">
+        </div>
+    </section>
+
+    <section id="section5">
+        <center><h1>Packages</h1></center><br><br>
+        <div id="sec5"></div>
+    </section>
+
+    <section id="section6">
+        <img src="./d1.jpg">
+        <form id="sec6">
+            <h2>BOOK YOUR DESTINATION</h2><br>
+            <label for="name">Name</label><br>
+            <input id="name" type="text" placeholder="Enter Your Name"><br><br>
+            <label for="mn">Mobile Number</label><br>
+            <input id="mn" type="number" placeholder="enter Your Number"><br><br>
+            <label for="wt">Where</label><br>
+            <input id="wt" type="text" placeholder="Where to ?"><br><br>
+            <label for="hm">members</label><br>
+            <input id="hm" type="number" placeholder="How many"><br><br>
+            <label for="sd">Start Date</label><br>
+            <input type="date" id="sd"><br><br>
+            <label for="ed">End Date</label><br>
+            <input type="date" id="ed"><br><br>
+            <label for="minfo">Members Information</label><br>
+            <textarea id="minfo"></textarea><br><br>
+            <input type="submit" value="Book Now"><br>
+        </form>
+    </section>
+
+    <section id="section7">
+        <center><h1 id="s7h1">What Our Customers Say</h1></center>
+        <div id="sec7">
+           <div>
+            <img src="./c1.jpg">
+            <h1>Jogendra</h1>
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+            <p>Great service! I had an amazing experience traveling with Travel Info. Highly recommended!</p>
+           </div>
+           <div>
+            <img src="./c2.jpeg">
+            <h1>Sucharitha</h1>
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon>
+            <p>Travel Info made my trip hassle-free! From booking to accommodations, everything was well-organized.</p>
+           </div>
+           <div>
+            <img src="./c3.webp">
+            <h1>Anvesh</h1>
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+            <p>Good service and friendly staff. I had a memorable vacation thanks to Travel Info's recommendations.</p>
+           </div>
+        </div>
+    </section>
+
+    <section id="section8">
+        <div id="sec8">
+            <div>
+                <h1>Get in Touch</h1><br><br>
+                <p>Contact us for any inquiries or assistance.</p>
+                <p>We're here to help you plan your perfect vacation!</p><br><br>
+                <p>+91 6300000000</p><br><br>
+                <p>Example@gmail.com</p><br><br>
+                <p>Hyderabad, India</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Name"><br><br>
+                <input type="number" placeholder="Mobile"><br><br>
+                <input type="email" placeholder="Email"><br><br>
+                <textarea placeholder="Message" id="msg"></textarea><br><br>
+                <input type="submit" value="Send Me" id="sub">
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div id="foot1">
+            <h1>Travel Info</h1>
+            <p>Welcome to Travel Info, your goto source for all your travel needs. Whether you're looking for exciting vacation packages, reliable travel services, or helpful travel tips, we've got you covered. Plan your next adventure with us!</p><br>
+            <ion-icon name="logo-pinterest"></ion-icon><ion-icon name="logo-facebook"></ion-icon><ion-icon name="logo-instagram"></ion-icon><ion-icon name="logo-youtube"></ion-icon>
+        </div>
+        <div id="foot2">
+            <h1>UseFull Links</h1>
+            <a href="#section1">Home</a><br>
+            <a href="#section3">About Us</a><br>
+            <a href="#section5">Packages</a><br>
+            <a href="#section6">Book</a><br>
+            <a href="#section7">Reviews</a><br>
+            <a href="#section8">Contact Us</a><br>
+        </div>
+        <div id="foot3">
+            <h1>Other Links</h1>
+            <a href="">Terms & Condition</a><br>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script>
+        let a = [{
+    "id": 1,
+    "image": "./p1.webp",
+    "title": "United States",
+    "description": "Explore the diverse landscapes and vibrant cities of the United States. From the bustling streets of New York City to the breathtaking beauty of the Grand Canyon, there's something for everyone in the USA.",
+    "rating": 5,
+    "price": "$799",
+  },
+  {
+    "id": 2,
+    "image": "./p2.jpg",
+    "title": "China",
+    "description": "Experience the rich history and culture of China. Visit iconic landmarks such as the Great Wall and the Forbidden City, Imperial Palace, The Summer Palace, and sample delicious Chinese cuisine.",
+    "rating": 4,
+    "price": "$399",
+  },
+  {
+    "id": 3,
+    "image": "./p3.webp",
+    "title": "Greece",
+    "description": "Immerse yourself in the ancient history and stunning landscapes of Greece. Explore the ruins of Athens, relax on the beautiful beaches of the Greek Islands, and indulge in delicious Mediterranean cuisine.",
+    "rating": 3,
+    "price": "$499",
+  },
+  {
+    "id": 4,
+    "image": "./p4.jpg",
+    "title": "Italy",
+    "description": "Discover the art, culture, and cuisine of Italy. Visit historic cities such as Rome, Florence, and Venice, and sample world-renowned Italian dishes like pasta and gelato.",
+    "rating": 5,
+    "price": "$599",
+  },
+  {
+    "id": 5,
+    "image": "./p5.jpg",
+    "title": "France",
+    "description": "Experience the romance and charm of France. Explore the iconic landmarks of Paris, such as the Eiffel Tower and the Louvre, and indulge in French cuisine and wine.",
+    "rating": 4,
+    "price": "$799",
+  },
+  {
+    "id": 6,
+    "image": "./p6.jpg",
+    "title": "Jordan",
+    "description": "Explore the ancient wonders of Jordan. Visit the rock-cut city of Petra, float in the Dead Sea, explore the desert landscapes of Wadi Rum, Ajloun Castle, Karak Castle and Dana Nature Reserve.",
+    "rating": 3,
+    "price": "$699",
+  },
+  {
+    "id": 7,
+    "image": "./p7.jpg",
+    "title": "Mexico",
+    "description": "Experience the vibrant culture and rich history of Mexico. Visit ancient Mayan ruins, relax on the beautiful beaches of Cancun, and sample delicious Mexican cuisine.",
+    "rating": 5,
+    "price": "$799",
+  },
+  {
+    "id": 8,
+    "image": "./p8.jpg",
+    "title": "Spain",
+    "description": "Discover the vibrant culture and stunning architecture of Spain. Visit historic cities such as Barcelona and Madrid, explore beautiful beaches, and enjoy delicious Spanish tapas.",
+    "rating": 4,
+    "price": "$599",
+  }
+];
+    let section5 = document.getElementById("sec5");
+
+    function generateStars(rating) {
+  let starIcons = '';
+  for (let i = 1; i <= 5; i++) {
+    if (i <= rating) {
+      starIcons += '★'; 
+    } else {
+      starIcons += '☆';
+    }
+  }
+  return starIcons;
+}
+
+    for(let i of a){
+      let divs = document.createElement("div")
+      divs.style.width="330px";
+      divs.style.height="370px";
+      divs.style.margin="15px 22px";
+      divs.style.overflow="scroll";
+      divs.style.scrollbarWidth="none";
+      divs.style.border="2px solid black";
+      divs.style.borderRadius="20px";
+      divs.style.paddingBottom="30px";
+      divs.style.display = 'flex';
+      divs.style.flexDirection="column";
+
+      var div1 = document.createElement("div")
+      div1.setAttribute("id","div1");
+      div1.style.height="200px";
+      div1.style.backgroundColor="rgb(22, 22, 88)";
+
+      var img = document.createElement("img");
+      img.style.width= "330px";
+      img.style.height="250px";
+      img.style.borderTopLeftRadius="20px";
+      img.style.borderTopRightRadius="20px";
+      img.setAttribute("src", i["image"]);
+
+      var title = document.createElement("h4");
+      title.innerHTML=i["title"];
+
+      var description = document.createElement("p");
+      description.innerHTML=i["description"];
+
+      var rating = document.createElement("p");
+      rating.innerHTML = generateStars(i["rating"]);
+
+      var amount = document.createElement("p");
+      amount.innerHTML="Price:" + i["price"];
+
+      var anchor =  document.createElement("a")
+      anchor.setAttribute("href","#section6");
+      anchor.innerHTML = "Book Now";
+      anchor.style.textDecoration="none";
+
+      var button =  document.createElement("button");
+      button.style.fontWeight = "bold";
+      button.appendChild(anchor)
+
+      div1.append(title,description,rating,amount,button)
+
+      divs.append(img,div1)
+
+      section5.appendChild(divs)
+    }    
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
